@@ -1,0 +1,57 @@
+.start-container {
+    background-image: url('/src/assets/Image 301.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .fade-text {
+    font-size: 2rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .dots-animation {
+    font-size: 2rem;
+    animation: bounce 1s infinite;
+  }
+  
+  .logo-animation {
+    width: 80px;      
+    height: 80px; 
+    font-size: 3rem;
+    animation: pulse 2s infinite;
+    margin-bottom: 20px;
+  }
+  
+  .start-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+  
